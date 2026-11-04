@@ -1,0 +1,45 @@
+{
+  "mode": "current",
+  "rounds": 1,
+  "dry_run": true,
+  "rules": [
+    {
+      "name": "双暴保留",
+      "conditions": [
+        {
+          "stat": "暴击率",
+          "required": true
+        },
+        {
+          "stat": "暴击伤害",
+          "required": true
+        }
+      ],
+      "minimum_matches": 2,
+      "enabled": true
+    },
+    {
+      "name": "四项中至少三项",
+      "conditions": [
+        {
+          "stat": "暴击率",
+          "required": false
+        },
+        {
+          "stat": "暴击伤害",
+          "required": false
+        },
+        {
+          "stat": "伤害增加",
+          "required": false
+        },
+        {
+          "stat": "攻击力百分比",
+          "required": false
+        }
+      ],
+      "minimum_matches": 3,
+      "enabled": true
+    }
+  ]
+}

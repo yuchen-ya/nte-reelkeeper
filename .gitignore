@@ -1,0 +1,29 @@
+# Local environment and downloaded models
+/.venv/
+/.venv-build/
+/models/
+__pycache__/
+*.py[cod]
+
+# Private settings, screenshots, logs and experiments
+/settings.json
+/logs/
+/work/
+/tests/fixtures/
+.env
+.env.*
+*.log
+
+# Build and development output
+/build/
+/dist/
+*.spec
+!/packaging/ReelKeeper.spec
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

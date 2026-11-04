@@ -1,0 +1,22 @@
+name: 问题反馈
+description: 报告识别、筛选、安装或循环运行问题
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 工具版本、Windows 和 Python 版本
+      placeholder: ReelKeeper 0.1.0 / Windows 11 / CPython 3.12
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤、期望结果与实际结果
+      description: 说明从投币页、动画页还是结果页开始，以及使用的保留规则。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 脱敏日志或截图
+      description: 上传前移除 UID、昵称、聊天、桌面内容、个人路径和凭据；不要上传整个运行目录。
